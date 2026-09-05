@@ -110,4 +110,13 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .stretch-head strong{font-size:12.5px;font-weight:600;color:#233644}
 .stretch-list p{font-size:12.5px;line-height:1.55;color:#4a5865;margin:0}
 .workout-credit{font-size:10.5px;line-height:1.5;color:#7c8894;margin:2px 0 0}
+.top-actions .locale-select{height:42px;background:#ffffffd9;border-radius:10px;font-size:12px;font-weight:500;color:#515d69;padding:0 12px;gap:8px}
+.top-actions .locale-select:hover{background:#fff;color:#182536}
+.locale-flag{font-size:16px;line-height:1}
+.locale-select .locale-name{white-space:nowrap}
+@media(max-width:767px){.top-actions .locale-select{width:44px;min-width:44px;height:44px;padding:0;justify-content:center;gap:4px}.top-actions .locale-select .locale-name{display:none}.top-actions .locale-select .locale-flag{display:inline-block}}
+.fork-credit{font-size:12px;line-height:1.6;color:#5b6b78;background:#f4f7f8;border:1px solid #18253610;border-radius:10px;padding:10px 12px;margin:0}
+.fork-credit a{color:#537a89}
+.workout-links{display:flex;flex-wrap:wrap;gap:2px 14px}
+.stretch-video{font-size:11.5px!important;display:inline-flex;align-items:center;gap:4px;margin-top:2px!important}
 @media(max-width:350px){.workout-card img{width:64px;height:64px}}

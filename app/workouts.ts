@@ -52,6 +52,9 @@ export const WGER_CREDIT = CREDIT;
 export function wgerUrl(id: number): string {
   return `https://wger.de/en/exercise/${id}`;
 }
+export function youtubeUrl(query: string): string {
+  return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(query);
+}
 
 // ---------------------------------------------------------------------------
 // Guides
