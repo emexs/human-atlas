@@ -2,7 +2,9 @@
 
 An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 
-**[Explore the live demo](https://human-atlas-seven.vercel.app)**
+> **Fork note:** This is a fork of [ashemag/human-atlas](https://github.com/ashemag/human-atlas). It adds workout and stretching guidance for every muscle — see [What this fork adds](#what-this-fork-adds).
+
+**[Explore this fork's live demo](https://human-atlas-beta.vercel.app)**
 
 ## Explore
 
@@ -14,6 +16,16 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.
 - Use compact controls and detail panels on mobile.
+
+## What this fork adds
+
+On top of the upstream atlas:
+
+- **Workout guides for every muscle** — selecting a muscular structure shows curated strength exercises (sets, cues, equipment) matched to that muscle. Deep or rarely isolated muscles fall back to whole-body compounds, and eyes, tongue, larynx, and heart tissue get an honest "not a gym muscle" note instead of a workout.
+- **Exercise illustrations** — each exercise shows a free-licensed image from the [wger exercise database](https://wger.de), linked back to its full guide (credited in the app).
+- **Stretching guidance** — every trainable muscle also gets stretches with hold times; the neck, pelvic floor, and breathing muscles get safe bodyweight-only tips instead.
+- **Workout layer preset** — one tap isolates muscles, skeleton, and connective tissue.
+- **Floor platform toggle** — hide the ground disc, pedestal, and rings for a clean floating view.
 
 ## Run locally
 
