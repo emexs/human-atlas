@@ -50,8 +50,45 @@ const CREDIT = 'Illustration: wger.de / Everkinetic (free licence, see source)';
 
 export const WGER_CREDIT = CREDIT;
 export function wgerUrl(id: number): string {
-  return `https://wger.de/en/exercise/${id}`;
+  const slug = WGER_SLUGS[id];
+  return slug ? `https://wger.de/en/exercise/${id}/view/${slug}` : `https://wger.de/en/exercise/${id}`;
 }
+
+// Canonical wger slugs (https://wger.de/en/exercise/<id>/view/<slug>), verified 200.
+const WGER_SLUGS: Record<number, string> = {
+  73: 'bench-press',
+  75: 'benchpress-dumbbells',
+  76: 'bench-press-narrow-grip',
+  81: 'bent-over-dumbbell-rows',
+  83: 'bent-over-rowing',
+  91: 'biceps-curls-with-barbell',
+  92: 'biceps-curls-with-dumbbell',
+  146: 'calf-press-using-leg-press-machine',
+  152: 'chin-up',
+  167: 'crunches',
+  197: 'dips-between-two-benches',
+  203: 'dumbbell-goblet-squat',
+  206: 'dumbbell-lunges-walking',
+  246: 'skullcrusher-sz-bar',
+  256: 'front-raises',
+  257: 'front-squats',
+  265: 'glute-bridge',
+  272: 'hammer-curls',
+  301: 'hyperextensions',
+  348: 'lateral-raises',
+  365: 'leg-curls-laying',
+  366: 'leg-curls-sitting',
+  369: 'leg-extension',
+  371: 'leg-press',
+  458: 'plank',
+  465: 'preacher-curls',
+  513: 'rowing-t-bar',
+  566: 'shoulder-press-barbell',
+  567: 'shoulder-press-dumbbells',
+  571: 'shrugs-barbells',
+  572: 'shrugs-dumbbells',
+  1243: 'double-leg-calf-raise',
+};
 export function youtubeUrl(query: string): string {
   return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(query);
 }

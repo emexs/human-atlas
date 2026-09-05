@@ -4,6 +4,11 @@ Notable changes in this fork of [ashemag/human-atlas](https://github.com/ashemag
 by Maximiliano Silva ([X: @emexs](https://x.com/emexs)).
 Live at [human-atlas-workout.vercel.app](https://human-atlas-workout.vercel.app/).
 
+## 2026-09-05 — Fix wger exercise links
+
+- Exercise "Full guide" links now use wger's canonical URL form
+  (`/en/exercise/<id>/view/<slug>`); all 32 linked pages verified.
+
 ## 2026-09-05 — Studio upgrades: sidebar, hover, dark mode
 
 - Detail sidebar rebuilt as a custom resizable panel: 540px default on desktop,
