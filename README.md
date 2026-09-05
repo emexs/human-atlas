@@ -7,7 +7,9 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 ## Explore
 
 - Orbit, zoom, and select structures directly on the body.
-- Toggle individual systems or use skeleton and organ presets.
+- Toggle individual systems or use skeleton, workout, and organ presets.
+- Train and stretch any muscle: select it to see curated exercises with free-licensed illustrations plus stretching guidance.
+- Hide the floor platform for a clean floating view.
 - Move from assembled anatomy to a spaced inventory of every visible piece.
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.
@@ -40,6 +42,8 @@ Validation covers mesh buffers, names and concept membership, nonoverlapping exp
 The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
 
 Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
+
+Exercise illustrations are hot-linked from the free [wger exercise database](https://wger.de) (CC-licensed, credited in the app) and are not bundled with the geometry.
 
 This is an educational explorer, not a diagnostic or surgical tool.
 

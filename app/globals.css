@@ -35,6 +35,8 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .layer-presets{gap:2px;background:#edf0f2;border:0;border-radius:9px;padding:3px;margin:15px 0 9px}.layer-presets button{height:30px;min-height:30px;flex:1;font-size:11px;border:0;padding:0 6px;border-radius:6px;color:#697582;font-weight:500}.layer-presets button[aria-pressed=true]{background:white;color:#233644;box-shadow:0 1px 3px #18253612}
 .system-row{opacity:1;gap:8px}.system-name{font-weight:400;color:#8a949e;font-size:12px;border-radius:7px;padding:0 5px;justify-content:flex-start}.enabled .system-name{color:#394957}.system-dot{width:6px;height:6px;box-shadow:0 0 0 2px #18253605}.system-count{font-variant-numeric:tabular-nums;font-size:10px}.system-list{padding-right:16px}.system-row [data-slot=switch]{transform:none;--primary:#536875}.system-row [data-slot=switch-thumb]{background:white}
 .panel-foot{font-size:10px;padding-inline:4px;min-height:44px}.panel-foot button{font-size:10px;font-weight:400;padding:0 5px}
+.floor-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 5px;border-top:1px solid #18253610;font-size:12px;color:#394957}
+.floor-row [data-slot=switch]{transform:none}
 .view-controls{border-radius:13px;padding:5px;gap:2px}.view-controls button{border-radius:8px;font-weight:500}.view-controls .active{background:#263b48;color:#fff;box-shadow:0 2px 4px #18253610}
 .bottom-dock{border-radius:16px;gap:21px;padding:17px 20px}.explode-label{font-size:12px;font-weight:500;color:#3c4956;margin-bottom:10px}.explode-label output{background:#edf1f3;border:1px solid #18253608;border-radius:6px;padding:3px 7px;font-size:12px;min-width:49px;text-align:center}.explode-label output span{font-size:10px;color:#73818e}.explode-control [data-slot=slider-thumb]{width:16px;height:16px;border:3px solid white;background:#263b48;box-shadow:0 0 0 1px #263b4830,0 2px 5px #18253618}.dock-reset,.dock-layers{height:auto;border-radius:0;font-weight:400}.dock-reset{font-size:10px;color:#6c7a88}
 .scene-caption{font-size:9px;letter-spacing:.11em;color:#7c8894}.studio-footer button{height:auto;padding:0;font-weight:400}
@@ -86,3 +88,26 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 @media(max-width:767px){body:has(.detail-sheet) .view-controls{visibility:hidden}}
 
 @media(max-height:600px) and (orientation:landscape){body:has(.detail-sheet) .bottom-dock{left:12px;right:324px;width:auto;transform:none;max-width:none;margin:0}}
+
+/* Workout guidance (muscular system detail panel). */
+.workout{display:flex;flex-direction:column;gap:10px;background:#f4f7f8;border:1px solid #18253610;border-radius:12px;padding:13px 13px 11px}
+.workout h3{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#3c4b58;margin:0}
+.workout-blurb{font-size:13px;line-height:1.6;color:#42505d;margin:0}
+.workout-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:2px 0 0;padding:0}
+.workout-card{display:flex;gap:11px;background:#fff;border:1px solid #1825360d;border-radius:10px;padding:10px;align-items:flex-start}
+.workout-card img{width:84px;height:84px;flex-shrink:0;object-fit:contain;background:#fff;border:1px solid #1825360c;border-radius:8px}
+.workout-card-body{display:flex;flex-direction:column;gap:5px;min-width:0}
+.workout-card-body strong{font-size:13px;font-weight:600;color:#233644}
+.workout-sets{font-size:10.5px;font-weight:500;letter-spacing:.02em;color:#5b6b78;background:#eef1f3;border-radius:5px;padding:2px 7px;width:fit-content}
+.workout-card-body p{font-size:12.5px;line-height:1.55;color:#4a5865;margin:0}
+.workout-link{font-size:12px!important;margin-top:2px!important}
+.workout-tips{display:flex;flex-direction:column;gap:7px;margin:2px 0 0;padding-left:18px;font-size:12.5px;line-height:1.55;color:#4a5865}
+.stretch-block{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #1825360d;border-radius:10px;padding:10px 11px}
+.stretch-block h4{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#3c4b58;margin:0}
+.stretch-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin:0;padding:0}
+.stretch-list li{border-left:3px solid #aec3bb;padding-left:9px;display:flex;flex-direction:column;gap:3px}
+.stretch-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.stretch-head strong{font-size:12.5px;font-weight:600;color:#233644}
+.stretch-list p{font-size:12.5px;line-height:1.55;color:#4a5865;margin:0}
+.workout-credit{font-size:10.5px;line-height:1.5;color:#7c8894;margin:2px 0 0}
+@media(max-width:350px){.workout-card img{width:64px;height:64px}}
