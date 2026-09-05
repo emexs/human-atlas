@@ -8,6 +8,7 @@ Live at [human-atlas-workout.vercel.app](https://human-atlas-workout.vercel.app/
 
 - Exercise "Full guide" links now use wger's canonical URL form
   (`/en/exercise/<id>/view/<slug>`); all 32 linked pages verified.
+- Added Vercel Web Analytics and Speed Insights tracking.
 
 ## 2026-09-05 — Studio upgrades: sidebar, hover, dark mode
 

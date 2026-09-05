@@ -9,6 +9,8 @@ import {Switch} from '@/components/ui/switch';
 import {Sheet,SheetContent,SheetTitle,SheetDescription} from '@/components/ui/sheet';
 import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
 import {Select,SelectContent,SelectItem,SelectTrigger} from '@/components/ui/select';
+import {Analytics} from '@vercel/analytics/react';
+import {SpeedInsights} from '@vercel/speed-insights/react';
 import AnatomyScene from './scene';
 import {DEFAULT_VISIBLE,SYSTEMS,type Atlas,type Concept,type Locale,type SceneState,type SystemId,type View} from './anatomy';
 import {wgerUrl,workoutForMuscle,youtubeUrl} from './workouts';
@@ -46,7 +48,7 @@ export default function Home(){
  const toggle=(id:SystemId)=>{setDetails(false);setState(s=>({...s,selected:[],isolate:false,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):[...s.visible,id]}));};
  const reset=()=>{setState(s=>({...initial,locale:s.locale,dark:s.dark,visible:DEFAULT_VISIBLE,reset:s.reset+1}));setChosen(null);setDetails(false);setPanel(null);};
  const openPanel=(next:'layers'|'search')=>{setDetails(false);setPanel(p=>p===next?null:next);};
- return <main className="studio">
+  return <main className="studio"><Analytics/><SpeedInsights/>
   {atlas&&<AnatomyScene atlas={atlas} state={{...state,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onHover={setHoverId} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/><div className={`hover-label${hoverPart?' visible':''}`} aria-hidden="true"><strong>{hoverPart?.name??''}</strong><span>{t(locale,'clickToExpand')}</span></div>
   <header className="identity"><div className="eyebrow"><span className="status-dot"/> {t(locale,'eyebrow')}</div><h1>Human Atlas<Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():'2,234'} {t(locale,'modeledPieces')} <span>·</span> BodyParts3D</div></header>
