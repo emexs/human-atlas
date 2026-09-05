@@ -4,7 +4,7 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 
 > **Fork note:** This is a fork of [ashemag/human-atlas](https://github.com/ashemag/human-atlas). It adds workout and stretching guidance for every muscle — see [What this fork adds](#what-this-fork-adds).
 
-**[Explore this fork's live demo](https://human-atlas-beta.vercel.app)**
+**[Explore this fork's live demo](https://human-atlas-workout.vercel.app)**
 
 ## Explore
 
