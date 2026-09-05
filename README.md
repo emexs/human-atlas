@@ -26,6 +26,8 @@ On top of the upstream atlas:
 - **Stretching guidance** — every trainable muscle also gets stretches with hold times; the neck, pelvic floor, and breathing muscles get safe bodyweight-only tips instead.
 - **Workout layer preset** — one tap isolates muscles, skeleton, and connective tissue.
 - **Floor platform toggle** — hide the ground disc, pedestal, and rings for a clean floating view.
+- **Hover preview + resizable panel** — on desktop, hovering a muscle highlights it and names it at the top; the detail sidebar is wider and drag-resizable up to 40% of the screen.
+- **Dark mode** — follow your system setting or toggle manually; the 3D scene dims too.
 
 ## Run locally
 
